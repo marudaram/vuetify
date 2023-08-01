@@ -84,8 +84,9 @@
       dark
       dismissible
     >
-      color="deep-purple accent-4" / dark / close-text="Close Alert" /
-      dismissible
+      dark 어트리뷰트를 지정하면 글자색을 흰색으로 바꾼 후 테마와 글자의 명도를
+      자동으로 조정하여 가독성을 높인다. color="deep-purple accent-4" / dark /
+      close-text="Close Alert" / dismissible
     </v-alert>
 
     <v-alert color="#2A3B4D" dark icon="mdi-firework" dense
