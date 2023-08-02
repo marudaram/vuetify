@@ -12,6 +12,24 @@ import BottomNavigationEx2 from "@/views/BottomNavigationEx2.vue";
 import BottomSheetsEx from "@/views/BottomSheetsEx.vue";
 import BreadCrumbsEx from "@/views/BreadCrumbsEx.vue";
 import ButtonsEx from "@/views/ButtonsEx.vue";
+import CalendarsEx from "@/views/CalendarsEx.vue";
+import CardsEx from "@/views/CardsEx.vue";
+import CarouselsEx from "@/views/CarouselsEx.vue";
+import ChipsEx from "@/views/ChipsEx.vue";
+import DialogsEx from "@/views/DialogsEx.vue";
+import DividersEx from "@/views/DividersEx.vue";
+import ExpansionPanelsEx from "@/views/ExpansionPanelsEx.vue";
+import FootersEx from "@/views/FootersEx.vue";
+import AutoCompletesEx from "@/views/FormInputsAndControl/AutoCompletesEx.vue";
+import CheckboxesEx from "@/views/FormInputsAndControl/CheckboxesEx.vue";
+import FileInputsEx from "@/views/FormInputsAndControl/FileInputsEx.vue";
+import FormsEx from "@/views/FormInputsAndControl/FormsEx.vue";
+import RadioButtonsEx from "@/views/FormInputsAndControl/RadioButtonsEx.vue";
+import RangeSlidersEx from "@/views/FormInputsAndControl/RangeSlidersEx.vue";
+import SelectsEx from "@/views/FormInputsAndControl/SelectsEx.vue";
+import SwitchesEx from "@/views/FormInputsAndControl/SwitchesEx.vue";
+import TextAreasEx from "@/views/FormInputsAndControl/TextAreasEx.vue";
+import GridSystemEx from "@/views/GridSystemEx.vue";
 
 import Vue from "vue";
 import VueRouter from "vue-router";
@@ -102,6 +120,114 @@ const routes = [
     path: "/buttonsEx",
     name: "ButtonsEx",
     component: ButtonsEx,
+  },
+  {
+    //calendars
+    path: "/calendarsEx",
+    name: "CalendarsEx",
+    component: CalendarsEx,
+  },
+  {
+    //cards
+    path: "/cardsEx",
+    name: "CardsEx",
+    component: CardsEx,
+  },
+  {
+    //carousels
+    path: "/carouselsEx",
+    name: "CarouselsEx",
+    component: CarouselsEx,
+  },
+  {
+    //chips
+    path: "/chipsEx",
+    name: "ChipsEx",
+    component: ChipsEx,
+  },
+  {
+    //dialogs
+    path: "/dialogsEx",
+    name: "DialogsEx",
+    component: DialogsEx,
+  },
+  {
+    //dividers
+    path: "/dividersEx",
+    name: "DividersEx",
+    component: DividersEx,
+  },
+  {
+    //expansion panels
+    path: "/expansionPanelsEx",
+    name: "ExpansionPanelsEx",
+    component: ExpansionPanelsEx,
+  },
+  {
+    //footers
+    path: "/footersEx",
+    name: "FootersEx",
+    component: FootersEx,
+  },
+  {
+    //auto completes
+    path: "/autoCompletesEx",
+    name: "AutoCompletesEx",
+    component: AutoCompletesEx,
+  },
+  {
+    //checkboxes
+    path: "/checkboxesEx",
+    name: "CheckboxesEx",
+    component: CheckboxesEx,
+  },
+  {
+    //file inputs
+    path: "/fileInputsEx",
+    name: "FileInputsEx",
+    component: FileInputsEx,
+  },
+  {
+    //forms
+    path: "/formsEx",
+    name: "FormsEx",
+    component: FormsEx,
+  },
+  {
+    //radio buttons
+    path: "/radioButtonsEx",
+    name: "RadioButtonsEx",
+    component: RadioButtonsEx,
+  },
+  {
+    //range sliders
+    path: "/rangeSlidersEx",
+    name: "RangeSlidersEx",
+    component: RangeSlidersEx,
+  },
+  {
+    //selects
+    path: "/selectsEx",
+    name: "SelectsEx",
+    component: SelectsEx,
+  },
+  {
+    //switches
+    path: "/switchesEx",
+    name: "SwitchesEx",
+    component: SwitchesEx,
+  },
+  {
+    //textareas
+    path: "/textAreasEx",
+    name: "TextAreasEx",
+    component: TextAreasEx,
+  },
+  {
+    //grid system
+    path: "/gridSystemEx",
+    name: "GridSystemEx",
+    component: GridSystemEx,
   },
 ];
 

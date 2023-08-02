@@ -218,8 +218,8 @@
       <v-btn text> Normal </v-btn>
       <v-btn text color="primary"> Primary </v-btn>
       <v-btn text color="error"> Error </v-btn>
-      <v-btn text disabled> Disabled </v-btn>
-    </v-row>
+      <v-btn text disabled> Disabled </v-btn> </v-row
+    >Maru7498!
   </v-app>
 </template>
 
