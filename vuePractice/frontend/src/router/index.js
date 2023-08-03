@@ -30,6 +30,10 @@ import SelectsEx from "@/views/FormInputsAndControl/SelectsEx.vue";
 import SwitchesEx from "@/views/FormInputsAndControl/SwitchesEx.vue";
 import TextAreasEx from "@/views/FormInputsAndControl/TextAreasEx.vue";
 import GridSystemEx from "@/views/GridSystemEx.vue";
+import HoverEx from "@/views/HoverEx.vue";
+import ImagesEx from "@/views/ImagesEx.vue";
+import ListsEx from "@/views/ListsEx.vue";
+import SirteamPrac from "@/views/Clone/SirteamPrac.vue";
 
 import Vue from "vue";
 import VueRouter from "vue-router";
@@ -228,6 +232,30 @@ const routes = [
     path: "/gridSystemEx",
     name: "GridSystemEx",
     component: GridSystemEx,
+  },
+  {
+    //hover
+    path: "/hoverEx",
+    name: "HoverEx",
+    component: HoverEx,
+  },
+  {
+    //images
+    path: "/imagesEx",
+    name: "ImagesEx",
+    component: ImagesEx,
+  },
+  {
+    //lists
+    path: "/listsEx",
+    name: "ListsEx",
+    component: ListsEx,
+  },
+  {
+    //clone
+    path: "/sirteamPrac",
+    name: "SirteamPrac",
+    component: SirteamPrac,
   },
 ];
 
