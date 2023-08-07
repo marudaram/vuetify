@@ -13,7 +13,9 @@
             <v-card-text
               class="font-weight-medium mt-12 text-center text-subtitle-1"
             >
-              Open Delay (Mouse enter)
+              Open Delay (Mouse enter) <br />마우스를 올렸을 때, 호버의 효과
+              딜레이 정도를 정할 수 있음<br />
+              ex) open-delay="200"
             </v-card-text>
           </v-card>
         </v-hover>
@@ -31,7 +33,9 @@
             <v-card-text
               class="font-weight-medium mt-12 text-center text-subtitle-1"
             >
-              Close Delay (Mouse leave)
+              Close Delay (Mouse leave)<br />마우스를 떼었을 때, 호버의 효과
+              딜레이 정도를 정할 수 있음<br />
+              ex) close-delay="200"
             </v-card-text>
           </v-card>
         </v-hover>
@@ -40,6 +44,7 @@
     <!-- 2 -->
     <template>
       <v-container class="pa-4 text-center">
+        이미지나 다른 요소들을 이용하여 커스터마이징도 가능
         <v-row class="fill-height" align="center" justify="center">
           <template v-for="(item, i) in items">
             <v-col :key="i" cols="12" md="4">
@@ -99,6 +104,8 @@
     </template>
     <!-- 3 -->
     <template>
+      v-expand-transition을 이용해서 다양한 효과를 줄 수 있음 / 커스터마이징
+      가능
       <v-hover v-slot="{ hover }">
         <v-card class="mx-auto" color="grey lighten-4" max-width="600">
           <v-img

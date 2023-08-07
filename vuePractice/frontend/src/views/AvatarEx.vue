@@ -2,24 +2,38 @@
   <v-app>
     <v-card>v-avatar primary</v-card>
     <v-avatar color="primary" size="69">v-avatar</v-avatar>
+    <div style="height: 50px"></div>
+
     <v-card>v-avatar primary / rounded - 약간 각진</v-card>
     <v-avatar color="primary" rounded size="69"></v-avatar>
+    <div style="height: 50px"></div>
+
     <v-card
       >v-avatar primary / rounded / tile - tile 하면 radius가 아예
       사라짐</v-card
     >
     <v-avatar color="primary" rounded tile size="69"></v-avatar>
+    <div style="height: 50px"></div>
+
     <v-card>color="accent" accent는 색상임</v-card>
     <v-avatar color="accent" size="69">v-avatar</v-avatar>
+    <div style="height: 50px"></div>
+
     <v-card
       >color="warning lighten-2" warning은 색상, lighten은 1부터 5까지 스펙트럼
       존재 / 숫자가 커질수록 색이 옅어진다(light)
     </v-card>
     <v-avatar color="warning lighten-2" rounded size="69"></v-avatar>
+    <div style="height: 50px"></div>
+
     <v-card>color="teal" teal 색상</v-card>
     <v-avatar color="teal" rounded size="69"></v-avatar>
+    <div style="height: 50px"></div>
+
     <v-card>size="" 으로 원하는 사이즈로 조정할 수 있다</v-card>
     <v-avatar color="grey lighten-2" rounded size="55">55</v-avatar>
+    <div style="height: 50px"></div>
+
     <v-card>v-icon / mdi-account-circle 이용해서 아이콘 넣을 수 있음</v-card>
     <v-row justify="space-around">
       <v-avatar color="indigo">
@@ -32,6 +46,8 @@
         <span class="white--text text-h5">CJ</span>
       </v-avatar>
     </v-row>
+    <div style="height: 50px"></div>
+
     <v-card
       >Advanced Usage / v-container fluid: 전체 너비를 이용하고자 할 경우 /
       v-row justify="center": 가운데정렬 / v-expansion-panels popout: 확장형

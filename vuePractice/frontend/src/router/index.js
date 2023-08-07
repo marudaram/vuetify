@@ -34,6 +34,20 @@ import HoverEx from "@/views/HoverEx.vue";
 import ImagesEx from "@/views/ImagesEx.vue";
 import ListsEx from "@/views/ListsEx.vue";
 import SirteamPrac from "@/views/Clone/SirteamPrac.vue";
+import OverlaysEx from "@/views/OverlaysEx.vue";
+import PaginationEx from "@/views/PaginationEx.vue";
+import ColorPickersEx from "@/views/Pickers/ColorPickersEx.vue";
+import DatePickersEx from "@/views/Pickers/DatePickersEx.vue";
+import TimePickersEx from "@/views/Pickers/TimePickersEx.vue";
+import RatingsEx from "@/views/RatingsEx.vue";
+import SheetsEx from "@/views/SheetsEx.vue";
+import DataIteratorsEx from "@/views/Tables/DataIteratorsEx.vue";
+import SimpleTablesEx from "@/views/Tables/SimpleTablesEx.vue";
+import DataTablesEx from "@/views/Tables/DataTablesEx.vue";
+import TabsEx from "@/views/TabsEx.vue";
+import TooltipsEx from "@/views/TooltipsEx.vue";
+import TreeviewEx from "@/views/TreeviewEx.vue";
+import VirtualScrollerEx from "@/views/VirtualScrollerEx.vue";
 
 import Vue from "vue";
 import VueRouter from "vue-router";
@@ -256,6 +270,90 @@ const routes = [
     path: "/sirteamPrac",
     name: "SirteamPrac",
     component: SirteamPrac,
+  },
+  {
+    //overlays
+    path: "/overlaysEx",
+    name: "OverlaysEx",
+    component: OverlaysEx,
+  },
+  {
+    //pagination
+    path: "/paginationEx",
+    name: "PaginationEx",
+    component: PaginationEx,
+  },
+  {
+    //color pickers
+    path: "/colorPickersEx",
+    name: "ColorPickersEx",
+    component: ColorPickersEx,
+  },
+  {
+    //date pickers
+    path: "/datePickersEx",
+    name: "DatePickersEx",
+    component: DatePickersEx,
+  },
+  {
+    //time pickers
+    path: "/timePickersEx",
+    name: "TimePickersEx",
+    component: TimePickersEx,
+  },
+  {
+    //ratings
+    path: "/ratingsEx",
+    name: "/RatingsEx",
+    component: RatingsEx,
+  },
+  {
+    //sheets
+    path: "/sheetsEx",
+    name: "SheetsEx",
+    component: SheetsEx,
+  },
+  {
+    //data iterators
+    path: "/dataIteratorsEx",
+    name: "DataIteratorsEx",
+    component: DataIteratorsEx,
+  },
+  {
+    //simple tables
+    path: "/simpleTablesEx",
+    name: "SimpleTablesEx",
+    component: SimpleTablesEx,
+  },
+  {
+    //data tables
+    path: "/dataTablesEx",
+    name: "DataTablesEx",
+    component: DataTablesEx,
+  },
+  {
+    //tabs
+    path: "/tabsEx",
+    name: "TabsEx",
+    component: TabsEx,
+  },
+  {
+    //tooltips
+    path: "/tooltipsEx",
+    name: "TooltipsEx",
+    component: TooltipsEx,
+  },
+  {
+    //treeview
+    path: "/treeviewEx",
+    name: "TreeviewEx",
+    component: TreeviewEx,
+  },
+  {
+    //virtual scroller
+    path: "/virtualScrollerEx",
+    name: "VirtualScrollerEx",
+    component: VirtualScrollerEx,
   },
 ];
 

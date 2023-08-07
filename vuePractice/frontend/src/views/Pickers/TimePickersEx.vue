@@ -1,0 +1,10 @@
+<template>
+  <v-app>
+    <v-time-picker
+      ampm-in-title
+      format="ampm"
+      landscape
+      scrollable
+    ></v-time-picker>
+  </v-app>
+</template>

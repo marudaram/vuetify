@@ -1,5 +1,8 @@
 <template>
   <v-app>
+    v-list 같은 경우엔 하위 속성으로 v-list-item / v-list-item-icon /
+    v-list-group / v-list-title / v-list-content 등등 굉장히 다양함 <br />
+    sub-group 속성을 이용하여 하위 메뉴를 나타낼 수 있음
     <v-card class="mx-auto" width="300">
       <v-list>
         <v-list-item>
