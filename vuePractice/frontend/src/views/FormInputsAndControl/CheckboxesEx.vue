@@ -108,6 +108,10 @@
       </v-card-text>
     </v-card>
     <!-- 2 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      label과 value를 이용해서 선택한 값을 볼 수 있음
+    </div>
     <template>
       <v-container fluid>
         <p>{{ selected }}</p>
@@ -116,6 +120,10 @@
       </v-container>
     </template>
     <!-- 3 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      indeterminate : 미정의
+    </div>
     <template>
       <v-container fluid>
         <v-row class="light--text">

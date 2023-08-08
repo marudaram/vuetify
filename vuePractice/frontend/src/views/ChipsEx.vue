@@ -1,5 +1,8 @@
 <template>
   <v-app>
+    <div class="font-weight-bold ml-8 mb-2">
+      v-if를 이용하여 클릭시 boolean 값을 주고 사라지게 설정할 수 있음
+    </div>
     <div class="text-center">
       <v-btn
         v-if="!chip1 && !chip2 && !chip3 && !chip4"
@@ -49,11 +52,19 @@
         Complete
       </v-chip>
     </div>
+    <div style="height: 100px"></div>
     <!-- 2 드래그 할 수 있는 chips -->
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      드래그 할 수 있는 chips
+    </div>
     <v-row justify="center" align="center">
       <v-chip draggable> Default </v-chip>
     </v-row>
     <!-- 3 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      :input-value="active" 설정
+    </div>
     <v-row justify="space-around" align="center">
       <v-chip class="ma-2" :input-value="active" filter> I'm v-chip </v-chip>
 
@@ -68,6 +79,10 @@
       <v-switch v-model="active" label="Active"></v-switch>
     </v-row>
     <!-- 4 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      color 속성으로 색 변경 가능 / v-icon 추가하여 아이콘 삽입가능
+    </div>
     <div class="text-center">
       <v-chip class="ma-2" label> Label </v-chip>
 
@@ -87,6 +102,10 @@
       </v-chip>
     </div>
     <!-- 5 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      outlined 속성
+    </div>
     <div class="text-center">
       <v-chip class="ma-2" color="success" outlined>
         <v-icon left> mdi-server-plus </v-icon>
@@ -109,6 +128,13 @@
       </v-chip>
     </div>
     <!-- 6 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      v-card를 이용하여 다양한 요소들을 묶어 사용하면 좋다
+      <br />
+      이미지에서의 contain 속성: Prevents the image from being cropped if it
+      doesn’t fit
+    </div>
     <v-card class="mx-auto" max-width="450">
       <!-- contain: Prevents the image from being cropped if it doesn’t fit -->
       <v-img
@@ -151,6 +177,11 @@
       </v-card-text>
     </v-card>
     <!-- 7 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      v-avatar과 v-icon을 같이 사용할 수 있음 / 첫번째 chips의 경우 v-chip 안에
+      v-avatar 안에 v-icon이 들어감
+    </div>
     <div class="text-center">
       <v-chip class="ma-2" color="indigo" text-color="white">
         <v-avatar left>
@@ -201,81 +232,13 @@
         Confirmed
       </v-chip>
     </div>
-    <!-- 8 -->
-    <v-card class="mx-auto" max-width="500">
-      <v-toolbar flat color="transparent">
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
-        <v-toolbar-title>Photo Info</v-toolbar-title>
-        <v-spacer></v-spacer>
-        <v-btn icon @click="$refs.search.focus()">
-          <v-icon>mdi-magnify</v-icon>
-        </v-btn>
-      </v-toolbar>
 
-      <v-container class="py-0">
-        <v-row align="center" justify="start">
-          <v-col
-            v-for="(selection, i) in selections"
-            :key="selection.text"
-            class="shrink"
-          >
-            <v-chip
-              :disabled="loading"
-              close
-              @click:close="selected.splice(i, 1)"
-            >
-              <v-icon left v-text="selection.icon"></v-icon>
-              {{ selection.text }}
-            </v-chip>
-          </v-col>
-
-          <v-col v-if="!allSelected" cols="12">
-            <v-text-field
-              ref="search"
-              v-model="search"
-              full-width
-              hide-details
-              label="Search"
-              single-line
-            ></v-text-field>
-          </v-col>
-        </v-row>
-      </v-container>
-
-      <v-divider v-if="!allSelected"></v-divider>
-
-      <v-list>
-        <template v-for="item in categories">
-          <v-list-item
-            v-if="!selected.includes(item)"
-            :key="item.text"
-            :disabled="loading"
-            @click="selected.push(item)"
-          >
-            <v-list-item-avatar>
-              <v-icon :disabled="loading" v-text="item.icon"></v-icon>
-            </v-list-item-avatar>
-            <v-list-item-title v-text="item.text"></v-list-item-title>
-          </v-list-item>
-        </template>
-      </v-list>
-
-      <v-divider></v-divider>
-
-      <v-card-actions>
-        <v-spacer></v-spacer>
-        <v-btn
-          :disabled="!selected.length"
-          :loading="loading"
-          color="purple"
-          text
-          @click="next"
-        >
-          Next
-        </v-btn>
-      </v-card-actions>
-    </v-card>
     <!-- 9 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      v-chip의 pill 속성은 약모양처럼 좌우 둥글게 표현해줌 / avatar에 이미지를
+      넣어 표현 가능
+    </div>
     <v-card max-width="400" class="mx-auto">
       <v-system-bar></v-system-bar>
 
@@ -341,6 +304,10 @@
       <v-textarea full-width single-line label="Message"></v-textarea>
     </v-card>
     <!-- 10 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      v-combobox로 연출 가능
+    </div>
     <v-combobox
       v-model="chips"
       :items="items"

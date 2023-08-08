@@ -1,5 +1,10 @@
 <template>
   <v-app>
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      bench - 숫자가 높아질수록 스크롤이 느려짐 -> 최대한 작은 숫자를 유지할
+      것을 권고하고 있다
+    </div>
     <div>
       <v-responsive max-width="400" class="mx-auto mb-4">
         <v-text-field

@@ -1,5 +1,11 @@
 <template>
   <v-app>
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      collapse-on-scroll 속성을 줄 경우 스크롤하면서 상단 바가 작아지게됨 <br />
+      scroll-target으로 어떤 화면을 타게팅할 것인지 결정, 해당 태그의 아이디를
+      적는다
+    </div>
     <v-card class="overflow-hidden">
       <v-app-bar
         :collapse="!collapseOnScroll"
@@ -29,6 +35,12 @@
         <v-container style="height: 1000px"> </v-container>
       </v-sheet>
     </v-card>
+    <!-- 2 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      shrink-on-scroll - 스크롤하면서 작아지게 설정 / fade-img-on-scroll -
+      스크롤하면서 이미지가 fade됨 <br />
+    </div>
     <v-card class="overflow-hidden">
       <v-app-bar
         absolute
@@ -81,7 +93,12 @@
         <v-container style="height: 1000px"></v-container>
       </v-sheet>
     </v-card>
+    <!-- 3 -->
     <!-- inverted-scroll: 뒤바뀐 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      inverted-scroll: 뒤바뀐
+    </div>
     <v-card class="overflow-hidden">
       <v-app-bar
         absolute
@@ -116,6 +133,7 @@
         <v-container style="height: 1500px"> </v-container>
       </v-sheet>
     </v-card>
+    <!-- 5 -->
     <v-card class="overflow-hidden">
       <v-app-bar
         absolute
@@ -161,6 +179,7 @@
         <v-container style="height: 1500px"></v-container>
       </v-sheet>
     </v-card>
+    <!-- 6 -->
     <v-card class="overflow-hidden">
       <v-app-bar
         absolute
@@ -236,36 +255,6 @@
       >
         <v-container style="height: 1000px"></v-container>
       </v-sheet>
-    </v-card>
-    <v-card class="mx-auto overflow-hidden" height="400">
-      <v-app-bar color="deep-purple" dark>
-        <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-
-        <v-toolbar-title>Title</v-toolbar-title>
-      </v-app-bar>
-
-      <v-navigation-drawer v-model="drawer" absolute temporary>
-        <v-list nav dense>
-          <v-list-item-group
-            v-model="group"
-            active-class="deep-purple--text text--accent-4"
-          >
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Home</v-list-item-title>
-            </v-list-item>
-
-            <v-list-item>
-              <v-list-item-icon>
-                <v-icon>mdi-account</v-icon>
-              </v-list-item-icon>
-              <v-list-item-title>Account</v-list-item-title>
-            </v-list-item>
-          </v-list-item-group>
-        </v-list>
-      </v-navigation-drawer>
     </v-card>
   </v-app>
 </template>

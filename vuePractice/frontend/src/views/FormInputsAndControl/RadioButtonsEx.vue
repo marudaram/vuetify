@@ -1,6 +1,5 @@
 <template>
-  <v-app
-    >x
+  <v-app>
     <v-card flat>
       <v-card-text>
         <v-container fluid>
@@ -59,6 +58,10 @@
     </v-card>
     <!-- 2 -->
     <!-- column, row로 방향을 정한다 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      column, row로 방향을 정한다
+    </div>
     <template>
       <v-container fluid>
         <v-radio-group v-model="column" column>

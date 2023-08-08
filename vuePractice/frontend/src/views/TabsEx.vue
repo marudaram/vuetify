@@ -37,6 +37,10 @@
     </v-card>
 
     <!-- 2 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      center-active 속성을 넣게되면 선택한 메뉴가 가운데로 감
+    </div>
     <template>
       <v-card>
         <v-tabs background-color="deep-purple accent-4" center-active dark>
@@ -94,6 +98,10 @@
     </template>
 
     <!-- 5 show-arrows 속성이 있으면 메뉴 끝까지 가더라도 화살표가 남아있음 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      show-arrows 속성이 있으면 메뉴 끝까지 가더라도 화살표가 남아있음
+    </div>
     <template>
       <v-card>
         <v-tabs dark background-color="teal darken-3" show-arrows>

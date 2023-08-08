@@ -1,5 +1,10 @@
 <template>
   <v-app>
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      flat tile 속성으로 그림자와 곡선이 모두 사라짐
+      <br />
+    </div>
     <v-card height="400px">
       <v-footer v-bind="localAttrs" :padless="padless">
         <v-card flat tile width="100%" class="red lighten-1 text-center">
@@ -37,6 +42,12 @@
       </v-row>
     </v-card>
     <!-- 2 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      color 속성으로 색을 지정해줄 수 있다 / rounded 속성을 적용하면 hover
+      효과가 동그랗게 나옴 / no gutters 속성을 사용하면 row에 포함된 칼럼들의
+      좌우 여백을 0으로 만들어준다
+    </div>
     <template>
       <v-footer color="primary lighten-1" padless>
         <v-row justify="center" no-gutters>
@@ -60,6 +71,10 @@
       </v-footer>
     </template>
     <!-- 3 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      v-card를 사용하여 text를 넣을 수 있다
+    </div>
     <template>
       <v-footer dark padless>
         <v-card flat tile class="indigo lighten-1 white--text text-center">
@@ -96,6 +111,8 @@
       </v-footer>
     </template>
     <!-- 4 -->
+    <div style="height: 100px"></div>
+
     <template>
       <v-footer dark padless>
         <v-card class="flex" flat tile>

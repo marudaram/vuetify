@@ -15,7 +15,7 @@
         src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
       ></v-img>
 
-      <v-card-title>Cafe Badilico</v-card-title>
+      <v-card-title>v-card-title 태그 이용</v-card-title>
 
       <v-card-text>
         <v-row align="center" class="mx-0">
@@ -34,16 +34,19 @@
         <div class="my-4 text-subtitle-1">$ • Italian, Cafe</div>
 
         <div>
-          Small plates, salads & sandwiches - an intimate setting with 12 indoor
-          seats plus patio seating.
+          v-card-text 태그 속에 v-row로 묶어서 v-rating과 점수를 나란히
+          넣어주고, div 태그로 아래에 작은 글귀를 적게끔 설정
         </div>
       </v-card-text>
 
       <v-divider class="mx-4"></v-divider>
 
-      <v-card-title>Tonight's availability</v-card-title>
+      <v-card-title>v-card-title 태그 이용</v-card-title>
 
       <v-card-text>
+        v-card-text 태그 속 v-chip-group > v-chip 요소들로 채움
+        <br />
+        v-progress-linear를 이용해서 버튼클릭시 로딩바 생성
         <v-chip-group
           v-model="selection"
           active-class="deep-purple accent-4 white--text"
@@ -65,41 +68,44 @@
         </v-btn>
       </v-card-actions>
     </v-card>
+
     <!-- 2 -->
     <v-card class="mx-auto" max-width="344" outlined>
       <v-list-item three-line>
         <v-list-item-content>
           <div class="text-overline mb-4">OVERLINE</div>
           <v-list-item-title class="text-h5 mb-1">
-            Headline 5
+            v-card > v-list-item > v-list-item-content > v-list-item-title
           </v-list-item-title>
           <v-list-item-subtitle
-            >Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle
+            >v-card > v-list-item > v-list-item-content >
+            v-list-item-subtitle</v-list-item-subtitle
           >
         </v-list-item-content>
 
-        <v-list-item-avatar tile size="80" color="grey"></v-list-item-avatar>
+        <v-list-item-avatar tile size="80" color="grey"
+          >v-list-item-avatar / tile속성</v-list-item-avatar
+        >
       </v-list-item>
 
       <v-card-actions>
         <v-btn outlined rounded text> Button </v-btn>
       </v-card-actions>
     </v-card>
+
     <!-- 3 -->
     <v-card class="mx-auto" max-width="344">
       <v-card-text>
-        <div>Word of the Day</div>
+        <div>v-card-text</div>
         <p class="text-h4 text--primary">el·ee·mos·y·nar·y</p>
         <p>adjective</p>
         <div class="text--primary">
-          relating to or dependent on charity; charitable.<br />
-          "an eleemosynary educational institution."
+          v-expand-transition태그를 이용해 조건문을 줘서 버튼 클릭시 화면이 위로
+          등장하게끔 설정
         </div>
       </v-card-text>
       <v-card-actions>
-        <v-btn text color="teal accent-4" @click="reveal = true">
-          Learn More
-        </v-btn>
+        <v-btn text color="teal accent-4" @click="reveal = true"> v-btn </v-btn>
       </v-card-actions>
 
       <v-expand-transition>
@@ -111,9 +117,8 @@
           <v-card-text class="pb-0">
             <p class="text-h4 text--primary">Origin</p>
             <p>
-              late 16th century (as a noun denoting a place where alms were
-              distributed): from medieval Latin eleemosynarius, from late Latin
-              eleemosyna ‘alms’, from Greek eleēmosunē ‘compassion’
+              v-card 속 v-expand-transition 속에 또 v-card 태그를 사용,
+              v-card-text 태그를 이용하여 제목을 써줌
             </p>
           </v-card-text>
           <v-card-actions class="pt-0">
@@ -124,6 +129,7 @@
         </v-card>
       </v-expand-transition>
     </v-card>
+
     <!-- 4 -->
     <v-container>
       <v-row justify="space-around">
@@ -136,7 +142,7 @@
               <v-app-bar-nav-icon color="white"></v-app-bar-nav-icon>
 
               <v-toolbar-title class="text-h6 white--text pl-0">
-                Messages
+                v-toolbar-title 태그 사용
               </v-toolbar-title>
 
               <v-spacer></v-spacer>
@@ -148,7 +154,10 @@
           </v-img>
 
           <v-card-text>
-            <div class="font-weight-bold ml-8 mb-2">Today</div>
+            <div class="font-weight-bold ml-8 mb-2">
+              v-timeline 태그에서 dense를 사용하면 타임라인이 한쪽으로 이동하고
+              아이템들이 한쪽 사이드에 있게됨
+            </div>
             <!-- dense: Hide opposite slot content, and position all items to one side of timeline -->
             <v-timeline align-top dense>
               <v-timeline-item

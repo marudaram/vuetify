@@ -18,6 +18,10 @@
     </v-simple-table>
 
     <!-- 2 fixed header - 스크롤 시 헤더가 고정됨 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      fixed header - 스크롤 시 헤더가 고정됨
+    </div>
     <template>
       <v-simple-table fixed-header height="300px">
         <template v-slot:default>

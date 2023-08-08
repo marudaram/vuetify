@@ -1,6 +1,10 @@
 <template>
   <v-app>
     <!-- v-expansion-panels 안에 panel 안에 header & content -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      v-expansion-panels 안에 panel 안에 header & content
+    </div>
     <v-row justify="center">
       <v-expansion-panels accordion>
         <v-expansion-panel v-for="(item, i) in 5" :key="i">
@@ -15,6 +19,12 @@
       </v-expansion-panels>
     </v-row>
     <!-- 2 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      readonly와 disabled의 차이는 디자인을 건드리냐 아니냐의 차이이다
+      <br />
+      multiple을 적어주면 동시에 여러개의 아코디언을 띄어놓을 수 있음
+    </div>
     <template>
       <div>
         <div class="d-flex">
@@ -47,6 +57,10 @@
       </div>
     </template>
     <!-- 3 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      focusable 속성이 추가되면 클릭했을 때 어두운 색으로 포커싱된다
+    </div>
     <template>
       <!-- focusable 속성이 추가되면 클릭했을 때 어두운 색으로 포커싱된다 -->
       <v-expansion-panels focusable>
@@ -62,6 +76,10 @@
       </v-expansion-panels>
     </template>
     <!-- 4 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      inset 속성은 클릭시 살짝 튀어나오게 해줌
+    </div>
     <template>
       <v-row justify="center">
         <!-- inset 속성은 클릭시 살짝 튀어나오게 해줌 -->

@@ -1,5 +1,9 @@
 <template>
   <v-app>
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      item 안에 item content 안에 title & subtitle
+    </div>
     <v-row justify="center">
       <v-dialog
         v-model="dialog"
@@ -88,6 +92,12 @@
       </v-dialog>
     </v-row>
     <!-- 2 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      아래의 template은 activator라는 이름의 slot을 가지고 있음 / 속성은 on,
+      attr이라는 이름의 속성을 가지고 있음 / v-on="{ [eventName]: eventHandler
+      }” 처럼 이벤트명과 이벤트 핸들러를 설정한 것
+    </div>
     <v-row justify="space-around">
       <v-col cols="auto">
         <v-dialog transition="dialog-bottom-transition" max-width="600">
@@ -133,6 +143,10 @@
       </v-col>
     </v-row>
     <!-- 3. persistent를 추가하면 바깥 부분을 클릭해도 창이 사라지지 않는다 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      persistent를 추가하면 바깥 부분을 클릭해도 창이 사라지지 않는다
+    </div>
     <v-row justify="center">
       <v-dialog v-model="dialog" persistent max-width="290">
         <template v-slot:activator="{ on, attrs }">
@@ -162,6 +176,10 @@
       </v-dialog>
     </v-row>
     <!-- 4 scrollable을 넣으면 클릭시 스크롤할 수 있다-->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      scrollable을 넣으면 클릭시 스크롤할 수 있다
+    </div>
     <v-row justify="center">
       <v-dialog v-model="dialog" scrollable max-width="300px">
         <template v-slot:activator="{ on, attrs }">

@@ -45,7 +45,7 @@
       </v-container>
     </template>
 
-    // 3
+    <!-- 3 -->
     <template>
       <v-container>
         <v-row class="flex-child">

@@ -32,6 +32,10 @@
       </v-row>
     </v-container>
     <!-- 2 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      background-color 속성으로 색을 지정해줄 수 있다
+    </div>
     <template>
       <v-container>
         <v-textarea
@@ -54,6 +58,10 @@
       </v-container>
     </template>
     <!-- 3 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      clearable 속성
+    </div>
     <template>
       <v-container fluid>
         <v-textarea
@@ -65,6 +73,10 @@
       </v-container>
     </template>
     <!-- 4 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      counter 속성은 글자 수를 카운트한다 / 자기소개서 등의 문서 작성 시 사용
+    </div>
     <template>
       <v-container fluid>
         <v-textarea
@@ -76,6 +88,14 @@
       </v-container>
     </template>
     <!-- 5 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      prepend-icon을 하게되면 아이콘이 앞에 붙는 형식이고, append-icon을
+      하게되면 아이콘이 뒤에 붙게 된다
+      <br />
+      inner과 outer를 사이에 끼워주게 되면 밖에 아이콘을 넣을지, 안에 넣을지
+      결정할 수 있다.
+    </div>
     <template>
       <v-container>
         <v-row>
@@ -115,6 +135,11 @@
       </v-container>
     </template>
     <!-- 6 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      rows 에 숫자를 넣어 길이를 조절할 수 있다 / 이 때 row-height 속성으로
+      세세한 조절도 가능
+    </div>
     <template>
       <v-container fluid>
         <v-row>
@@ -160,6 +185,10 @@
       </v-container>
     </template>
     <!-- 7 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      다양한 요소와 함께 사용
+    </div>
     <template>
       <v-card class="mx-auto" style="max-width: 500px">
         <v-system-bar color="deep-purple darken-4" dark>

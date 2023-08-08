@@ -1,22 +1,26 @@
 <template>
   <v-app>
     <v-card>block 설정을 주게되면 버튼이 한블럭을 차지한다</v-card>
+
     <v-btn block> Block Button </v-btn>
+    <div style="height: 100px"></div>
     <v-card
       >depressed 속성은 배경색은 그대로 남겨놓지만 그림자는 지운다 / disabled의
       경우 버튼이 비활성화된다</v-card
     >
 
-    <v-row align="center" justify="space-around">
+    <v-row align="center" justify="space-around" class="pt-6">
       <v-btn depressed> Normal </v-btn>
       <v-btn depressed color="primary"> Primary </v-btn>
       <v-btn depressed color="error"> Error </v-btn>
       <v-btn depressed disabled> Disabled </v-btn>
     </v-row>
+    <div style="height: 100px"></div>
     <v-card
       >floating 속성의 버튼들은 동그랗고 보통 아이콘을 포함한다 / 그 외 다양한
       속성들을 넣어 커스터마이징할 수 있다</v-card
     >
+
     <div class="text-center">
       <v-btn class="mx-2" fab dark small color="primary">
         <v-icon dark> mdi-minus </v-icon>
@@ -42,6 +46,8 @@
         <v-icon dark> mdi-android </v-icon>
       </v-btn>
     </div>
+    <div style="height: 100px"></div>
+
     <v-card
       >icon 속성을 선언하고 v-icon 요소를 넣어 아이콘을 버튼처럼 활용할 수도
       있다 / 색상은 coior로 선언하여 바꿀 수 있으며 비활성화하고 싶은 경우
@@ -112,6 +118,8 @@
         </v-container>
       </v-card-text>
     </v-card>
+    <div style="height: 100px"></div>
+
     <v-card
       >loader & loading 속성을 이용해서 클릭 시 로딩 효과를 줄 수 있다 / 로딩할
       때는 비활성화되도록 disabled 설정을 같이 해줄 수 있다</v-card
@@ -213,13 +221,15 @@
         </v-btn>
       </v-sheet>
     </div>
+    <div style="height: 100px"></div>
+
     <v-card>text 속성을 주면 배경색도, 그림자도 없다</v-card>
-    <v-row align="center" justify="space-around">
+    <v-row align="center" justify="space-around" class="pt-6">
       <v-btn text> Normal </v-btn>
       <v-btn text color="primary"> Primary </v-btn>
       <v-btn text color="error"> Error </v-btn>
-      <v-btn text disabled> Disabled </v-btn> </v-row
-    >Maru7498!
+      <v-btn text disabled> Disabled </v-btn>
+    </v-row>
   </v-app>
 </template>
 
