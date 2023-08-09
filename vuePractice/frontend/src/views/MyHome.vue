@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <template>
-      <v-card height="400" width="256" class="mx-auto">
-        <v-navigation-drawer permanent>
+      <v-card class="mx-auto">
+        <v-navigation-drawer fixed dark>
           <v-list-item>
             <v-list-item-content>
               <v-list-item-title class="text-h6">

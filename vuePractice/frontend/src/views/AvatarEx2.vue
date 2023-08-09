@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-card
-      >클릭했을 때 프로필 보는 느낌으로 만드는 것 가능 / v-menu: 메뉴 드롭다운
+      >클릭했을 때 프로필처럼 뜨게끔 설정 가능 / v-menu: 메뉴 드롭다운
     </v-card>
     <v-container fluid style="height: 300px">
       <v-row justify="center">

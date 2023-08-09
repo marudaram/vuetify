@@ -1,11 +1,11 @@
 <template>
   <v-app>
-    <v-card
-      >inset: 테두리와 element 사이의 내부 공간 / inset이 추가되면 올라오는
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      inset: 테두리와 element 사이의 내부 공간 / inset이 추가되면 올라오는
       sheets의 크기가 줄어든다 / hide-overlay속성을 추가하면 창이 올라왔을 때
       바깥 부분이 어두워지지 않는다 / persistent속성을 추가하면 바깥 부분을
-      눌러도 취소되지 않는다</v-card
-    >
+      눌러도 취소되지 않는다
+    </div>
     <div class="text-center">
       <v-bottom-sheet v-model="sheet" inset>
         <template v-slot:activator="{ on, attrs }">
@@ -21,7 +21,11 @@
         </v-sheet>
       </v-bottom-sheet>
     </div>
-    <v-card>activator를 대신해서 v-model을 사용할 수 있다</v-card>
+    <!-- 2 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      activator를 대신해서 v-model을 사용할 수 있다
+    </div>
     <div class="text-center">
       <v-btn color="blue" dark @click="sheet = !sheet"> Open v-model </v-btn>
       <v-bottom-sheet v-model="sheet">
@@ -36,9 +40,12 @@
         </v-sheet>
       </v-bottom-sheet>
     </div>
-    <v-card
-      >persistent를 사용하면 바깥부분을 클릭해도 창이 꺼지지 않는다</v-card
-    >
+    <!-- 3 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      persistent를 사용하면 바깥부분을 클릭해도 창이 꺼지지 않는다
+    </div>
+
     <div class="text-center">
       <v-bottom-sheet v-model="sheet" persistent>
         <template v-slot:activator="{ on, attrs }">
@@ -56,7 +63,11 @@
         </v-sheet>
       </v-bottom-sheet>
     </div>
-    <v-card>v-bottom-sheet를 이용해서 음악창을 만들 수 있다</v-card>
+    <!-- 4 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      v-bottom-sheet를 이용해서 음악창을 만들 수 있다
+    </div>
     <div class="text-center">
       <v-bottom-sheet inset>
         <template v-slot:activator="{ on, attrs }">
@@ -107,7 +118,11 @@
         </v-card>
       </v-bottom-sheet>
     </div>
-    <v-card>다양하게 응용 가능</v-card>
+    <!-- 5 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      다양하게 응용 가능
+    </div>
     <div class="text-center">
       <v-bottom-sheet v-model="sheet">
         <template v-slot:activator="{ on, attrs }">

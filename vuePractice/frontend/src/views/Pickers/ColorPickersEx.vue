@@ -2,13 +2,7 @@
   <v-app>
     <div style="height: 100px"></div>
     <div class="font-weight-bold pb-5" style="margin: 0 auto">
-      Object.keys() 메서드는 주어진 객체의 속성 이름들을 일반적인 반복문과
-      동일한 순서로 순회되는 열거할 수 있는 배열로 반환함
-      <br />
-      https://tocomo.tistory.com/26
-      <br />
-      Number은 문자열을 숫자로 변환하는 함수 toFixed는 소수점 자리수를 얼마나
-      나타낼건지 정하는 함수
+      왼쪽에서부터 차례대로 hide-canvas / canvas-height 조절 / dot-size 조절
     </div>
     <v-row justify="space-around">
       <v-color-picker class="ma-2" hide-canvas></v-color-picker>
@@ -17,6 +11,11 @@
     </v-row>
 
     <!-- 2 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      왼쪽에서부터 차례대로 hide-inputs / hide-mode-switch / v-select 추가하여
+      모드 설정
+    </div>
     <template>
       <v-row justify="space-around">
         <v-color-picker class="ma-2" hide-inputs></v-color-picker>
@@ -33,6 +32,11 @@
     </template>
 
     <!-- 3 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      v-btn을 활용해서 모드를 선택할 수 있음 / v-sheet을 활용하여 선택한 값의
+      정도를 화면에 띄움
+    </div>
     <template>
       <v-container>
         <v-row>

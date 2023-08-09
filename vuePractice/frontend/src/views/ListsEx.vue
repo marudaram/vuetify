@@ -1,8 +1,16 @@
 <template>
   <v-app>
-    v-list 같은 경우엔 하위 속성으로 v-list-item / v-list-item-icon /
-    v-list-group / v-list-title / v-list-content 등등 굉장히 다양함 <br />
-    sub-group 속성을 이용하여 하위 메뉴를 나타낼 수 있음
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      v-list 같은 경우엔 하위 속성으로 v-list-item / v-list-item-icon /
+      v-list-group / v-list-title / v-list-content 등등 굉장히 다양함 <br />
+      sub-group 속성을 이용하여 하위 메뉴를 나타낼 수 있음 <br />
+      dense / flat / rounded / shaped 등 디자인 속성 다양 <br />
+      disabled 속성으로 비활성화 시킬 수도 있음 <br />
+      two-line / three-line으로 height 조절 가능 <br />
+      subheader를 넣을 수도 있음
+    </div>
+
     <v-card class="mx-auto" width="300">
       <v-list>
         <v-list-item>

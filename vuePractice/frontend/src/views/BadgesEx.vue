@@ -1,6 +1,9 @@
 <template>
   <v-app>
-    <v-card>v-badge: 알림 표시느낌</v-card>
+    <v-card
+      >v-badge: 알림 표시느낌 / dot 속성을 주면 점으로 나온다 / offset-x
+      offset-y 속성으로 점의 위치 설정 가능</v-card
+    >
     <v-container>
       <v-row align="center" justify="center">
         <v-badge bordered color="error" icon="mdi-lock" overlap>
@@ -39,7 +42,9 @@
         </v-badge>
       </v-row>
     </v-container>
-    <v-card>이런식으로 커스터마이징도 가능</v-card>
+    <v-card
+      >이런식으로 커스터마이징도 가능 / @click을 이용해서 구현 가능</v-card
+    >
 
     <v-container>
       <v-row justify="space-around">

@@ -1,6 +1,10 @@
 <template>
   <v-app>
     <v-container>
+      <div style="height: 100px"></div>
+      <div class="font-weight-bold pb-5" style="margin: 0 auto">
+        elevation에 따른 차이 / 오른쪽으로 갈수록 elevation이 커짐
+      </div>
       <v-row justify="space-around">
         <v-col
           v-for="elevation in elevations"
@@ -21,11 +25,28 @@
     </v-container>
 
     <!-- 2 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      rounded 속성 - false / true / 'xl' <br />
+      rounded에는 false와 true 외에도 0 / sm / md / lg / xl / xxl / pill /
+      circle이 들어갈 수 있음
+    </div>
     <template>
       <v-container>
         <v-row justify="space-around">
           <v-col
-            v-for="rounded in [false, true, 'xl']"
+            v-for="rounded in [
+              false,
+              true,
+              0,
+              'sm',
+              'md',
+              'lg',
+              'xl',
+              'xxl',
+              'pill',
+              'circle',
+            ]"
             :key="rounded"
             cols="12"
             md="4"
@@ -37,7 +58,8 @@
                 class="mx-auto"
                 height="100"
                 width="100"
-              ></v-sheet>
+                >{{ rounded }}</v-sheet
+              >
               <div></div>
             </v-sheet>
           </v-col>
@@ -46,6 +68,10 @@
     </template>
 
     <!-- 3 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      color 속성으로 다양한 변화를 줄 수 있음
+    </div>
     <template>
       <v-container>
         <v-row class="flex-child">

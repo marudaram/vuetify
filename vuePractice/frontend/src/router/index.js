@@ -49,6 +49,7 @@ import TooltipsEx from "@/views/TooltipsEx.vue";
 import TreeviewEx from "@/views/TreeviewEx.vue";
 import VirtualScrollerEx from "@/views/VirtualScrollerEx.vue";
 import MyHome from "@/views/MyHome.vue";
+import SirteamMail from "@/views/Clone/SirteamMail.vue";
 
 import Vue from "vue";
 import VueRouter from "vue-router";
@@ -361,6 +362,12 @@ const routes = [
     path: "/",
     name: "MyHome",
     component: MyHome,
+  },
+  {
+    //SirteamMail
+    path: "/sirteamMail",
+    name: "SirteamMail",
+    component: SirteamMail,
   },
 ];
 

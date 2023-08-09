@@ -11,6 +11,11 @@
       </v-carousel-item>
     </v-carousel>
     <!-- 2 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      inset: Enlarge the v-switch track to encompass(애워싸다) the thumb -
+      엄지에 좀더 맞게끔 크기를 키움(v-switch)
+    </div>
     <v-card elevation="24" max-width="444" class="mx-auto">
       <v-system-bar lights-out></v-system-bar>
       <v-carousel
@@ -45,7 +50,13 @@
         </v-list-item>
       </v-list>
     </v-card>
+
     <!-- 3 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      reverse-transition="fade-transition" transition="fade-transition" / src
+      속성으로 이미지로 채워넣을 수 있음
+    </div>
     <v-carousel>
       <v-carousel-item
         v-for="(item, i) in items"
@@ -56,6 +67,10 @@
       ></v-carousel-item>
     </v-carousel>
     <!-- 4 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      hide-delimiter-background / show-arrows-on-hover
+    </div>
     <v-carousel
       cycle
       height="400"
@@ -70,7 +85,12 @@
         </v-sheet>
       </v-carousel-item>
     </v-carousel>
+
     <!-- 5 -->
+    <div style="height: 100px"></div>
+    <div class="font-weight-bold pb-5" style="margin: 0 auto">
+      arrow 대신 v-btn 사용 가능
+    </div>
     <v-carousel
       cycle
       height="400"

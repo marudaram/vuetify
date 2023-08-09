@@ -35,7 +35,7 @@
     <div style="height: 50px"></div>
 
     <v-card>v-icon / mdi-account-circle 이용해서 아이콘 넣을 수 있음</v-card>
-    <v-row justify="space-around">
+    <v-row justify="space-around" class="pt-6">
       <v-avatar color="indigo">
         <v-icon dark> mdi-account-circle </v-icon>
       </v-avatar>
